@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores 3</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+        p{
+            color: blue;
+        }
+        p:hover{
+        color: chartreuse;
+        }
+        div p:nth-child(2){
+            color:cornflowerblue;
+        }
+        p::first-letter{
+            color: pink;
+        }
+        p::before{
+            content: "🎶";
+        }
+        p::after{
+            content: "🌐";
+        }
+        input::placeholder{
+            color: rgb(20, 153, 113);
+        }
+        .buton{
+            cursor: pointer;
+            background-color: aqua;
+            color: blueviolet;
+            border-radius: 1vh 1vw;
+        }
+        .buton:hover{
+            background-color: brown;
+            color:yellow;
+        }
+        .buton:active{
+            background-color: chartreuse;
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <p>Hola Soy Jean</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+    <input type="text" placeholder="Nombre">
+    <input type="submit" class="buton">
+</body>
+</html>
